@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="">
+    <title>Collective Design</title>
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link rel="stylesheet" href="libs/normalize/normalize.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-dist.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-dist.css">
+  </head>
+  <body>
+    <section class="main_container">
+      <header id="header">
+        <div class="header navbar-fixed-top">
+          <div class="container-fluid">
+            <nav>
+              <ul>
+                <li><a href="./">Inicio</a></li>
+                <li><a href="./contacto">Contacto</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="main-wrapper">
+        <section class="contacto">
+          <h2>Contacto</h2><span>¡Háblanos de tu proyecto o pasa a saludarnos!</span>
+          <form method="POST" action="envio.php" id="form_contact" name="formulario_contacto" onsubmit="evento_envio()" class="col-xs-12 col-sm-10 col-md-6">
+            <div class="form-group">
+              <input type="text" id="name" name="nombre" placeholder="Nombre" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="text" id="asunto" name="asunto" placeholder="Asunto" class="form-control">
+            </div>
+            <div class="form-group">
+              <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="6" class="form-control"></textarea>
+            </div>
+            <div class="form-group col-md-3 col-md-offset-9 btn-enviar">
+              <input type="submit" id="enviar" value="Enviar" class="form-control btn-primary">
+            </div>
+          </form>
+        </section>
+        <div id="modal_mensaje" class="ocultar">
+          <div id="ventana">
+            <h2 id="titulo_modal"></h2>
+            <p id="descripcion_modal"></p>
+          </div>
+        </div>
+        <section class="descripcion-contacto"><span>Sé un WebDesigner</span><span>Siempre estamos buscando gente talentosa, manda tus datos a info@misitio.com</span><span>Estudio</span><span>Av. Las Begonias 456, Lima info@misitio.com Tel: 934-742-917 Fax: 934-742-917</span>
+          <div class="enlaces"><a href=""><i class="fa fa-facebook fa-3x"></i></a><a href=""><i class="fa fa-twitter fa-3x"></i></a></div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <p>© 2016 Creado por Juan Carlos Contreras</p>
+        </div>
+      </footer>
+    </section>
+    <script src="libs/jquery/jquery-dist.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="libs/scrollflow/scrollflow.js"></script>
+    <script src="js/main-dist.js"></script>
+  </body>
+</html>

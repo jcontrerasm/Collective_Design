@@ -1,0 +1,42 @@
+extends templates/_layout
+
+block content
+
+    section(class="contacto")
+
+        h2 Contacto
+        span ¡Háblanos de tu proyecto o pasa a saludarnos!
+
+        form(class="col-xs-12 col-sm-10 col-md-6" method="POST" action="envio.php" id="form_contact" name="formulario_contacto" onsubmit="evento_envio()")
+
+            div(class="form-group")
+                input(type="text" id="name" name="nombre" class="form-control" placeholder="Nombre")
+
+            div(class="form-group")
+                input(type="email" id="email" name="email" class="form-control" placeholder="Email")
+
+            div(class="form-group")
+                input(type="text" id="asunto" name="asunto" class="form-control" placeholder="Asunto")
+
+            div(class="form-group")
+                textarea(class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje" rows="6")
+
+            div(class="form-group col-md-3 col-md-offset-9 btn-enviar")
+                input(type="submit" id="enviar" class="form-control btn-primary" value="Enviar")
+
+    div(id="modal_mensaje" class="ocultar")
+        div(id="ventana")
+            h2(id="titulo_modal")
+            p(id="descripcion_modal")
+
+    section(class="descripcion-contacto")
+
+        span Sé un WebDesigner
+        span Siempre estamos buscando gente talentosa, manda tus datos a info@misitio.com
+
+        span Estudio
+        span Av. Las Begonias 456, Lima info@misitio.com Tel: 934-742-917 Fax: 934-742-917
+
+        div(class="enlaces")
+            a(href=""): i(class="fa fa-facebook fa-3x")
+            a(href=""): i(class="fa fa-twitter fa-3x")
